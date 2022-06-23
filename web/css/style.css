@@ -627,17 +627,24 @@ p{
       padding-top: 50px;
     }
 
+    .bd-grid{
+      max-width: none;
+    }
+
     .nav{
       display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-columns: minmax(100px, auto) 1fr auto;
     }
     .nav_login{
-      justify-self: end;
       margin-bottom: 15px;
     }
 
     .nav_login a{
       margin-right: 10px;
+    }
+
+    .nav_login a:first-of-type{
+      color: var(--tird-color);
     }
 
     .nav_menu{
